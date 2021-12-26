@@ -171,15 +171,15 @@
     │                                                                            │
     │                                                                            │
     │ Upgrade app:                        Event                     Event        │
-    │ Schedule resource                   start                     stop         │
+    │ Schedule resources                  start                     stop         │
     │ downloading worker                  time                      time         │
     │       │                               │                        │           │
     │       │              before event     │                        │           │
     │    ●──┴─────────░░░░░░░░░░░░░░░░░░░░░░████████████████○████████│───┬─────▶ │
     │                      ■────────────────────■           │            │       │
     │                   Download           Resources is     │            │       │
-    │                   resource           downloaded       │            │       │
-    │                   Retry if           succeeded        │            │       │
+    │                   resources          downloaded       │            │       │
+    │                   Retry if           successfully     │            │       │
     │                   failed                          1st open      Delete     │
     │                                                                resources   │
     │                                                                            │
