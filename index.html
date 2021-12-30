@@ -1,220 +1,207 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Mono Sketch - a text drawing tool on web</title>
-    <link rel="icon" href="favicon.png">
-
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Fira Code', monospace;
-            font-size: 15px;
-            color: rgb(253, 248, 203);
-            background-color: black;
-            line-height: 22px;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: normal;
-            font-size: 15px;
-            line-height: 18.5px;
-            margin: 0;
-            padding: 0;
-        }
-        .hidden-text {
-            display: none;
-        }
-        a {
-            color: rgb(255, 246, 162);
-        }
-        a:hover {
-            color: rgb(149, 248, 91);
-        }
-        .content {
-            white-space: pre;
-        }
-        a.content {
-            color: rgb(255, 246, 162);
-            text-decoration: none;
-        }
-        a.content:hover {
-            color:rgb(149, 248, 91)
-        }
-        .graph {
-            font-family: 'Courier New', Courier, monospace;
-            line-height: 18px;
-        }
-
-    </style>
+    <meta charset="UTF-8">
+    <title>MonoSketch - a drawing tool with characters</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-<a class="content" href="https://app.monosketch.io/" title="Sketch now" target="#">
-                                                 _             _            _
-                                                | |           | |          | |
-     _ __ ___     ___    _ __     ___      ___  | | __   ___  | |_    ___  | |__
-    | '_ ` _ \   / _ \  | '_ \   / _ \    / __| | |/ /  / _ \ | __|  / __| | '_ \
-    | | | | | | | (_) | | | | | | (_) |   \__ \ |   <  |  __/ | |_  | (__  | | | |
-    |_| |_| |_|  \___/  |_| |_|  \___/    |___/ |_|\_\  \___|  \__|  \___| |_| |_|
-</a>
+<article>
+    <div>
+        <a class="no-underline graph logo" href="https://app.monosketch.io/" title="Sketch now" target="#">
+            <span class="line">                                             _             _            _</span>
+            <span class="line">                                            │ │           │ │          │ │</span>
+            <span class="line"> _ __ ___     ___    _ __     ___      ___  │ │ __   ___  │ │_    ___  │ │__</span>
+            <span class="line">│ '_ ` _ \   / _ \  │ '_ \   / _ \    / __│ │ │/ /  / _ \ │ __│  / __│ │ '_ \</span>
+            <span class="line">│ │ │ │ │ │ │ (_) │ │ │ │ │ │ (_) │   \__ \ │   <  |  __/ │ │_  │ (__  │ │ │ │</span>
+            <span class="line">│_│ │_│ │_│  \___/  │_│ │_│  \___/    │___/ │_│\_\  \___│  \__│  \___│ │_│ │_│</span>
+        </a>
+    </div>
 
-<h1 id="whatisthis">
-    <span class="hidden-text">What is this?</span>
-    <a class="content" href="#whatisthis">
+    <h1 id="whatisthis">
+        <span class="hidden">What is this?</span>
+        <a class="no-underline graph" href="#whatisthis">
+            <span class="line">╦ ╦┬ ┬┌─┐┌┬┐ ┬┌─┐ ┌┬┐┬ ┬┬┌─┐┌─┐</span>
+            <span class="line">║║║├─┤├─┤ │  │└─┐  │ ├─┤│└─┐ ┌┘</span>
+            <span class="line">╚╩╝┴ ┴┴ ┴ ┴  ┴└─┘  ┴ ┴ ┴┴└─┘ o</span>
+        </a>
+    </h1>
+    <p class="space-top-1">
+        A tool for drawing with characters.<br/>
+        With MonoSketch, you can easily create diagrams with Texts, Rectangles, and Lines
+        <span class="side-note" data-content="More shapes will be supported in the future">
+            [*]
+        </span>
+    </p>
+    <div class="center space-top-2 space-bottom-2">
+        <span class="graph">
+            <span class="line">┌───────────────────────────────────────────────┐</span>
+            <span class="line">│                                               │</span>
+            <span class="line">│    Client           Server         Database   │</span>
+            <span class="line">│                                     Server    │</span>
+            <span class="line">│      █                 █               █      │</span>
+            <span class="line">│      █   message #1    █               █      │</span>
+            <span class="line">│      █─ ─── ─── ─── ──▶█   update #1   █      │</span>
+            <span class="line">│      █                 █─ ─── ─── ─── ▶█      │</span>
+            <span class="line">│      █                 █               █      │</span>
+            <span class="line">│      █                 █               █      │</span>
+            <span class="line">│      █                 █               █      │</span>
+            <span class="line">│      █                 █               █      │</span>
+            <span class="line">│      █                 █    OK #1      █      │</span>
+            <span class="line">│      █      DONE #1    █◀── ─── ─── ───█      │</span>
+            <span class="line">│      █◀── ─── ─── ─── ─█               █      │</span>
+            <span class="line">│      █                 █               █      │</span>
+            <span class="line">│      █                 █               █      │</span>
+            <span class="line">│                                               │</span>
+            <span class="line">│                                               │</span>
+            <span class="line">└───────────────────────────────────────────────┘</span>
+        </span>
+    </div>
+    <div class="center space-top-3">
+        <a class="graph no-underline" href="https://app.monosketch.io" target="#">
+            <span class="line">╔══════════════════════════╗</span>
+            <span class="line">║        SKETCH NOW        ║</span>
+            <span class="line">╚══════════════════════════╝</span>
+        </a>
+    </div>
 
+    <h1 id="features">
+        <span class="hidden">Features</span>
+        <a class="no-underline graph" href="#features">
+            <span class="line">╔═╗┌─┐┌─┐┌┬┐┬ ┬┬─┐┌─┐┌─┐</span>
+            <span class="line">╠╣ ├┤ ├─┤ │ │ │├┬┘├┤ └─┐</span>
+            <span class="line">╚  └─┘┴ ┴ ┴ └─┘┴└─└─┘└─┘</span>
+        </a>
+    </h1>
 
-    ╦ ╦┬ ┬┌─┐┌┬┐  ┬┌─┐  ┌┬┐┬ ┬┬┌─┐┌─┐
-    ║║║├─┤├─┤ │   │└─┐   │ ├─┤│└─┐ ┌┘
-    ╚╩╝┴ ┴┴ ┴ ┴   ┴└─┘   ┴ ┴ ┴┴└─┘ o</a>
-</h1>
-<span class="content">
-        Another tool for drawing with letters.
-        With MonoSketch, you can easily create simple diagrams with Texts, Rectangles,
-        and Lines [*]                                                                      [*] More shapes will be
-                                                                                               supported in the future
-        Example <span class="graph">
-                    ┌───────────────────────────────────────────────┐
-                    │                                               │
-                    │    Client           Server         Database   │
-                    │                                     Server    │
-                    │      █                 █               █      │
-                    │      █    msg #1       █               █      │
-                    │      █─ ─── ─── ─── ──▶█   update #1   █      │
-                    │      █                 █─ ─── ─── ─── ▶█      │
-                    │      █                 █               █      │
-                    │      █                 █               █      │
-                    │      █                 █               █      │
-                    │      █                 █               █      │
-                    │      █                 █    OK #1      █      │
-                    │      █      DONE #1    █◀── ─── ─── ───█      │
-                    │      █◀── ─── ─── ─── ─█               █      │
-                    │      █                 █               █      │
-                    │      █                 █               █      │
-                    │                                               │
-                    │                                               │
-                    └───────────────────────────────────────────────┘
-            </span>
-            <a class="graph content" href="https://app.monosketch.io" target="#">
-                               ╔═════════════════════════╗
-                               ║       SKETCH NOW        ║
-                               ╚═════════════════════════╝</a>
+    <p>
+        DRAWING TOOLS<br/>
+        - Rectangle<br/>
+        - Text<br/>
+        - Line<br/>
+        <br/>
+        SHAPE FORMATS<br/>
+        - Fill<br/>
+        - Border<br/>
+        - Line start/end heads<br/>
+        <br/>
+        EDITTING<br/>
+        - Infinity scroll, no limitations for 4 directions<br/>
+        - Auto save<br/>
+        - Save and load from file<br/>
+        - Copy / Cut / Paste / Duplicate<br/>
+        - Move and change shapes' order<br/>
+        <br/>
+        EXPORTING<br/>
+        - Export selected shapes<br/>
+        - Copy as text [CMD + SHIFT + C] / [CTRL + SHIFT + C]<br/>
+    </p>
 
-</span>
+    <h1 id="limitations">
+        <span class="hidden">Limitations and Future features</span>
+        <a class="no-underline graph" href="#limitations">
+            <span class="line">╦  ┬┌┬┐┬┌┬┐┌─┐┌┬┐┬┌─┐┌┐┌┌─┐ ┌─┐┬─┐ ╔═╗┬ ┬┌┬┐┬ ┬┬─┐┌─┐ ┌─┐┌─┐┌─┐┌┬┐┬ ┬┬─┐┌─┐┌─┐</span>
+            <span class="line">║  │││││ │ ├─┤ │ ││ ││││└─┐ │ │├┬┘ ╠╣ │ │ │ │ │├┬┘├┤  ├┤ ├┤ ├─┤ │ │ │├┬┘├┤ └─┐</span>
+            <span class="line">╩═╝┴┴ ┴┴ ┴ ┴ ┴ ┴ ┴└─┘┘└┘└─┘ └─┘┴└─ ╚  └─┘ ┴ └─┘┴└─└─┘ └  └─┘┴ ┴ ┴ └─┘┴└─└─┘└─┘</span>
+        </a>
+    </h1>
+    <p class="space-top-1">
+        - Not work well with Safari.
+        <span class="side-note"
+              data-content="I tried to debug the  CSS and JS on Safari but could not figure out how to fix the problems ([Issue 323](issues/323))">[*]</span>
+    </p>
+    <p class="space-top-1">
+        - Future work
+        <span class="side-note" data-content="See [Projects](projects) for more detail">[*]</span>
+    </p>
+    <p class="space-left-1">
+        + Multiple working workspaces<br/>
+        + Grouping<br/>
+        + Paint tool<br/>
+        + Snap line to shapes<br/>
+        + You name it<br/>
+    </p>
 
-<h1 id="features">
-    <span class="hidden-text">Features</span>
-    <a class="content" href="#features">
+    <h1 id="whyimadethis">
+        <span class="hidden">Why I made this?</span>
+        <a class="no-underline graph" href="#whyimadethis">
+            <span class="line">╦ ╦┬ ┬┬ ┬ ╦ ┌┬┐┌─┐┌┬┐┌─┐ ┌┬┐┬ ┬┬┌─┐┌─┐</span>
+            <span class="line">║║║├─┤└┬┘ ║ │││├─┤ ││├┤   │ ├─┤│└─┐ ┌┘</span>
+            <span class="line">╚╩╝┴ ┴ ┴  ╩ ┴ ┴┴ ┴─┴┘└─┘  ┴ ┴ ┴┴└─┘ o</span>
+        </a>
+    </h1>
+    <p class="space-top-1">
+        I do love using ASCII diagrams for demonstrating the workflow of something,
+        especially for system design. It is also very easy to share and edit just
+        with a simple edit text like NotePad. Moreover, ASCII's chart is the only
+        embeddable diagram within the code, which is my everyday job.
+    </p>
+    <div class="center">
 
-
-    ╔═╗┌─┐┌─┐┌┬┐┬ ┬┬─┐┌─┐┌─┐
-    ╠╣ ├┤ ├─┤ │ │ │├┬┘├┤ └─┐
-    ╚  └─┘┴ ┴ ┴ └─┘┴└─└─┘└─┘</a>
-</h1>
-<span class="content">
-        DRAWING TOOLS
-        - Rectangle
-        - Text
-        - Line
-
-        SHAPE FORMATS
-        - Fill
-        - Border
-        - Line start/end heads
-
-        EDITTING
-        - Infinity scroll, no limitations for 4 directions
-        - Auto save
-        - Save and load from file
-        - Copy / Cut / Paste / Duplicate
-        - Move and change shapes' order
-
-        EXPORTING
-        - Export selected shapes
-        - Copy as text [CMD + SHIFT + C] / [CTRL + SHIFT + C]
-</span>
-
-<h1 id="limitations">
-    <span class="hidden-text">Limitations and Future features</span>
-    <a class="content" href="#limitations">
-
-
-    ╦  ┬┌┬┐┬┌┬┐┌─┐┌┬┐┬┌─┐┌┐┌┌─┐  ┌─┐┬─┐  ╔═╗┬ ┬┌┬┐┬ ┬┬─┐┌─┐  ┌─┐┌─┐┌─┐┌┬┐┬ ┬┬─┐┌─┐┌─┐
-    ║  │││││ │ ├─┤ │ ││ ││││└─┐  │ │├┬┘  ╠╣ │ │ │ │ │├┬┘├┤   ├┤ ├┤ ├─┤ │ │ │├┬┘├┤ └─┐
-    ╩═╝┴┴ ┴┴ ┴ ┴ ┴ ┴ ┴└─┘┘└┘└─┘  └─┘┴└─  ╚  └─┘ ┴ └─┘┴└─└─┘  └  └─┘┴ ┴ ┴ └─┘┴└─└─┘└─┘</a>
-</h1>
-<span class="content">
-        - Not work well with Safari. [*]                                                   [*] I tried to debug the  CSS
-                                                                                               and JS on Safari but could
-        - Future work: See <a href="https://github.com/tuanchauict/MonoSketch/projects" target="#">Projects</a>                                                            not figure out how to fix
-          + Multiple working workspaces                                                        the problems. (Issue <a href="https://github.com/tuanchauict/MonoSketch/issues/323" target="#">#323</a>)
-          + Grouping
-          + Paint tool
-          + Snap line to shapes
-          + You name it
-</span>
-
-
-<h1 id="whyimadethis">
-    <span class="hidden-text">Why I made this?</span>
-    <a class="content" href="#whyimadethis">
-
-
-    ╦ ╦┬ ┬┬ ┬  ╦  ┌┬┐┌─┐┌┬┐┌─┐  ┌┬┐┬ ┬┬┌─┐┌─┐
-    ║║║├─┤└┬┘  ║  │││├─┤ ││├┤    │ ├─┤│└─┐ ┌┘
-    ╚╩╝┴ ┴ ┴   ╩  ┴ ┴┴ ┴─┴┘└─┘   ┴ ┴ ┴┴└─┘ o</a>
-</h1>
-<span class="content">
-    I do love using ASCII diagrams for demonstrating the workflow of something,
-    especially for system design. It is also very easy to share and edit just
-    with a simple edit text like NotePad. Moreover, ASCII's chart is the only
-    embeddable diagram within the code, which is my everyday job.
-
-    <span class="graph">
-    ┌────────────────────────────────────────────────────────────────────────────┐
-    │                                                                            │
-    │                                                                            │
-    │ Upgrade app:                        Event                     Event        │
-    │ Schedule resources                  start                     stop         │
-    │ downloading worker                  time                      time         │
-    │       │                               │                        │           │
-    │       │              before event     │                        │           │
-    │    ●──┴─────────░░░░░░░░░░░░░░░░░░░░░░████████████████○████████│───┬─────▶ │
-    │                      ■────────────────────■           │            │       │
-    │                   Download           Resources is     │            │       │
-    │                   resources          downloaded       │            │       │
-    │                   Retry if           successfully     │            │       │
-    │                   failed                          1st open      Delete     │
-    │                                                                resources   │
-    │                                                                            │
-    └────────────────────────────────────────────────────────────────────────────┘
+    <span class="graph space-top-2 space-bottom-2">
+        <span class="line">┌────────────────────────────────────────────────────────────────────────────┐</span>
+        <span class="line">│                                                                            │</span>
+        <span class="line">│                                                                            │</span>
+        <span class="line">│ Upgrade app:                        Event                     Event        │</span>
+        <span class="line">│ Schedule resources                  start                     stop         │</span>
+        <span class="line">│ downloading worker                  time                      time         │</span>
+        <span class="line">│       │                               │                        │           │</span>
+        <span class="line">│       │              before event     │                        │           │</span>
+        <span class="line">│    ●──┴─────────░░░░░░░░░░░░░░░░░░░░░░████████████████○████████│───┬─────▶ │</span>
+        <span class="line">│                      ■────────────────────■           │            │       │</span>
+        <span class="line">│                   Download           Resources is     │            │       │</span>
+        <span class="line">│                   resources          downloaded       │            │       │</span>
+        <span class="line">│                   Retry if           successfully     │            │       │</span>
+        <span class="line">│                   failed                          1st open      Delete     │</span>
+        <span class="line">│                                                                resources   │</span>
+        <span class="line">│                                                                            │</span>
+        <span class="line">└────────────────────────────────────────────────────────────────────────────┘</span>
     </span>
+    </div>
+    <p class="space-top-1">
+        Before, I tried several tools and felt acceptable with <a href="https://textik.com" target="#">Textik</a>.
+        However, Textik's shapes do not look good to me over time. Then I found out a macOS's native app,
+        <a href="https://monodraw.helftone.com" target="#">Monodraw</a>. Unfortunately, it's not free. I
+        didn't want to pay, so, I code. Besides, some friends of mine said that they were not allowed to install
+        Monodraw as the policy from their companies, therefore, it's a good chance for developing something
+        that works on the browser rather than a native app.
+    </p>
+    <p class="space-top-1">
+        At the time I started this project, I almost had no experience with the web app.
+        It took me a while for quite standardized source code.<br/>
+        <a href="https://kotlinlang.org/docs/js-overview.html" target="_blank">Kotlin/JS</a> is used for writing the
+        control logic and <a href="https://sass-lang.com/" target="_blank">SASS</a> for styling.
+    </p>
+    <p class="space-top-1">
+        This project is <a href="https://github.com/tuanchauict/MonoSketch" target="#">Open Source</a> under Apache
+        License
+        version 2.0. Feel free to fork
+        and make one yourself or contribute to this project.
+    </p>
 
-    Before, I tried several tools and felt acceptable with <a href="https://textik.com" target="#">Textik</a>. However, Textik's
-    shapes do not look good to me. Then I found out a macOS's native app, <a href="https://monodraw.helftone.com" target="#">Monodraw</a>.
-    Unfortunately, it's not free. I didn't want to pay, so, I code. Besides, some
-    friends of mine said that they were not allowed to install Monodraw as the
-    policy from their companies, therefore, it's a good chance for developing
-    something that works on the browser rather than a native app.
+    <div class="center space-top-3 space-bottom-3">
+        <p>Like this project?</p>
+        <a class="graph no-underline" href="https://github.com/tuanchauict/MonoSketch" target="#">
+            <span class="line">╔══════════════════════════╗</span>
+            <span class="line">║      CONTRIBUTE NOW      ║</span>
+            <span class="line">╚══════════════════════════╝</span>
+        </a>
+    </div>
 
-    At the time I started this project, I almost had no experience with the web app.
-    It took me a while for quite standardized source code.
-    Kotlin/JS is used for writing the control logic and SASS for styling.
-
-    This project is <a href="https://github.com/tuanchauict/MonoSketch" target="#">Open Source</a> under Apache License version 2.0. Feel free to fork
-    and make one yourself or contribute to this project.
-
-    <a class="graph content" href="https://github.com/tuanchauict/MonoSketch" target="#">
-                            ╔═════════════════════════╗
-                            ║     CONTRIBUTE NOW      ║
-                            ╚═════════════════════════╝</a>
-
-
-
-
-
-</span>
-
-<span class="content">
-    [*]  This page is created with the help of <a href="https://patorjk.com/software/taag/#p=display&h=0&f=Big&t=mono%20sketch" target="#">Patorik.com</a> for awesome ASCII fonts
-    [**] This landing page is painted by the MonoSketch app itself. It's great!
-         <a href="monosketch-landingpage.mono" target="#">Download and open this file</a> with <a href="https://app.monosketch.io/" target="#">Mono Sketch app</a> for your own pleasure.
-</span>
+    <div class="footnote">
+        <pre>----------------------------------------------------------------------------------</pre>
+        <p>
+            [*] &nbsp;This page is created with the help of
+            <a href="https://patorjk.com/software/taag/#p=display&h=0&f=Big&t=mono%20sketch" target="#">Patorik.com</a>
+            for awesome ASCII fonts
+        </p>
+        <p>
+            [**] This landing page is painted by the MonoSketch app itself. It's great!
+            Download <a href="monosketch-landingpage.mono" target="#">this file</a> and open with
+            <a href="https://app.monosketch.io/" target="#">Mono Sketch app</a> for your own pleasure.
+        </p>
+    </div>
+</article>
 </body>
 </html>
