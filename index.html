@@ -30,13 +30,12 @@
     </h1>
     <p class="space-top-1">
         A tool for drawing with characters.<br/>
-        With MonoSketch, you can easily create diagrams with Texts, Rectangles, and Lines
-        <span class="side-note" data-content="More shapes will be supported in the future">
-            [*]
-        </span>
+        With basic shapes like Texts, Rectangles, and Lines
+        <span class="side-note" data-content="More shapes will be supported in the future">[*]</span>,
+        you can create from simple to very complex diagrams, charts, etc. with Mono Sketch.
     </p>
 
-    <div class="center space-top-2 space-bottom-2 animation-container" data-duration="200" data-auto-play>
+    <div class="center space-top-2 animation-container" data-duration="200" data-auto-play>
         <span class="graph thumbnail">
             <span class="line">┌───────────────────────────────────────────────┐</span>
             <span class="line">│                                               │</span>
@@ -59,11 +58,32 @@
         <span class="graph lazy frame" data-graph="client-server-db#3"></span>
         <span class="graph lazy frame" data-graph="client-server-db#4"></span>
     </div>
-    <div class="center space-top-3">
+
+    <span class="center graph space-top-1">
+        <span class="line">┌────────────────────────────────────────────────────────────────────────────┐</span>
+        <span class="line">│                                                                            │</span>
+        <span class="line">│                                                                            │</span>
+        <span class="line">│ Upgrade app:                        Event                     Event        │</span>
+        <span class="line">│ Schedule resources                  start                     stop         │</span>
+        <span class="line">│ downloading worker                  time                      time         │</span>
+        <span class="line">│       │                               │                        │           │</span>
+        <span class="line">│       │              before event     │                        │           │</span>
+        <span class="line">│    ●──┴─────────░░░░░░░░░░░░░░░░░░░░░░████████████████○████████┴───┬─────▶ │</span>
+        <span class="line">│                      ■────────────────────■           │            │       │</span>
+        <span class="line">│                   Download           Resources is     │            │       │</span>
+        <span class="line">│                   resources          downloaded       │            │       │</span>
+        <span class="line">│                   Retry if           successfully     │            │       │</span>
+        <span class="line">│                   failed                          1st open      Delete     │</span>
+        <span class="line">│                                                                resources   │</span>
+        <span class="line">│                                                                            │</span>
+        <span class="line">└────────────────────────────────────────────────────────────────────────────┘</span>
+    </span>
+
+    <div class="center space-top-1">
         <a class="graph no-underline" href="https://app.monosketch.io" target="#">
-            <span class="line">╔══════════════════════════╗</span>
-            <span class="line">║        SKETCH NOW        ║</span>
-            <span class="line">╚══════════════════════════╝</span>
+            <span class="line">╔═════════════════════════╗</span>
+            <span class="line">║         TRY NOW         ║</span>
+            <span class="line">╚═════════════════════════╝</span>
         </a>
     </div>
 
@@ -131,24 +151,46 @@
             <span class="graph lazy frame" data-graph="feature-tool-line#6"></span>
             <span class="graph lazy frame" data-graph="feature-tool-line#7" data-duration="700"></span>
         </div>
+    </div>
+    <p class="space-top-1">Various formatting options</p>
+    <div class="graph">
+        <span class="line">
+┌ ─ ─ ─ ─ ─ ─  ┌────────────┐ ┏━━━━━━━━━━━━┓ ╔════════════╗
+             │ │            │ ┃            ┃ ║            ║
+│              │            │ ┃            ┃ ║            ║
+             │ │            │ ┃            ┃ ║            ║
+└ ─ ─ ─ ─ ─ ─  └────────────┘ ┗━━━━━━━━━━━━┛ ╚════════════╝
 
+ ─ ─ ─ ─ ─ ─ ┐ ┌────────────┐ ┏━━━━━━━━━━━━┓ ╔════════════╗
+│░░░░░░░░░░░░  │▒▒▒▒▒▒▒▒▒▒▒▒│ ┃████████████┃ ║▚▚▚▚▚▚▚▚▚▚▚▚║
+ ░░░░░░░░░░░░│ │▒▒▒▒▒▒▒▒▒▒▒▒│ ┃████████████┃ ║▚▚▚▚▚▚▚▚▚▚▚▚║
+│░░░░░░░░░░░░  │▒▒▒▒▒▒▒▒▒▒▒▒│ ┃████████████┃ ║▚▚▚▚▚▚▚▚▚▚▚▚║
+ ─ ─ ─ ─ ─ ─ ┘ └────────────┘ ┗━━━━━━━━━━━━┛ ╚════════════╝
+
+◀─────────────────────────────────────────────────────────▶
+○━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━○
+■═════════════════════════════════════════════════════════■
+◎ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ◎
+● ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ●
+        </span>
     </div>
     <br/>
-    SHAPE FORMATS<br/>
-    - Fill<br/>
-    - Border<br/>
-    - Line start/end heads<br/>
-    <br/>
-    EDITTING<br/>
+    And more:<br/>
     - Infinity scroll, no limitations for 4 directions<br/>
     - Auto save<br/>
     - Save and load from file<br/>
     - Copy / Cut / Paste / Duplicate<br/>
     - Move and change shapes' order<br/>
-    <br/>
-    EXPORTING<br/>
     - Export selected shapes<br/>
     - Copy as text [CMD + SHIFT + C] / [CTRL + SHIFT + C]<br/>
+
+    <div class="center space-top-2">
+        <a class="graph no-underline" href="https://app.monosketch.io" target="#">
+            <span class="line">╔══════════════════════════╗</span>
+            <span class="line">║        SKETCH NOW        ║</span>
+            <span class="line">╚══════════════════════════╝</span>
+        </a>
+    </div>
 
     <h1 id="limitations">
         <span class="hidden">Limitations and Future features</span>
@@ -191,25 +233,7 @@
     </p>
     <div class="center">
 
-    <span class="graph space-top-2 space-bottom-2">
-        <span class="line">┌────────────────────────────────────────────────────────────────────────────┐</span>
-        <span class="line">│                                                                            │</span>
-        <span class="line">│                                                                            │</span>
-        <span class="line">│ Upgrade app:                        Event                     Event        │</span>
-        <span class="line">│ Schedule resources                  start                     stop         │</span>
-        <span class="line">│ downloading worker                  time                      time         │</span>
-        <span class="line">│       │                               │                        │           │</span>
-        <span class="line">│       │              before event     │                        │           │</span>
-        <span class="line">│    ●──┴─────────░░░░░░░░░░░░░░░░░░░░░░████████████████○████████┴───┬─────▶ │</span>
-        <span class="line">│                      ■────────────────────■           │            │       │</span>
-        <span class="line">│                   Download           Resources is     │            │       │</span>
-        <span class="line">│                   resources          downloaded       │            │       │</span>
-        <span class="line">│                   Retry if           successfully     │            │       │</span>
-        <span class="line">│                   failed                          1st open      Delete     │</span>
-        <span class="line">│                                                                resources   │</span>
-        <span class="line">│                                                                            │</span>
-        <span class="line">└────────────────────────────────────────────────────────────────────────────┘</span>
-    </span>
+
     </div>
     <p class="space-top-1">
         Before, I tried several tools and felt acceptable with <a href="https://textik.com" target="#">Textik</a>.
