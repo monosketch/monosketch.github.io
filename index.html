@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>MonoSketch - a drawing tool with characters</title>
     <link href="style.css" rel="stylesheet"/>
-    <script src="script.js"></script>
+    <script src="MonoSketch-web.js"></script>
 </head>
 <body>
 <article>
@@ -35,29 +35,29 @@
             [*]
         </span>
     </p>
-    <div class="center space-top-2 space-bottom-2">
-        <span class="graph">
+
+    <div class="center space-top-2 space-bottom-2 animation-container" data-duration="200" data-auto-play>
+        <span class="graph thumbnail">
             <span class="line">┌───────────────────────────────────────────────┐</span>
             <span class="line">│                                               │</span>
             <span class="line">│    Client           Server         Database   │</span>
             <span class="line">│                                     Server    │</span>
-            <span class="line">│      █                 █               █      │</span>
-            <span class="line">│      █   message #1    █               █      │</span>
+            <span class="line">│      █    message #1   █               █      │</span>
             <span class="line">│      █─ ─── ─── ─── ──▶█   update #1   █      │</span>
             <span class="line">│      █                 █─ ─── ─── ─── ▶█      │</span>
-            <span class="line">│      █                 █               █      │</span>
-            <span class="line">│      █                 █               █      │</span>
-            <span class="line">│      █                 █               █      │</span>
             <span class="line">│      █                 █               █      │</span>
             <span class="line">│      █                 █    OK #1      █      │</span>
             <span class="line">│      █      DONE #1    █◀── ─── ─── ───█      │</span>
             <span class="line">│      █◀── ─── ─── ─── ─█               █      │</span>
             <span class="line">│      █                 █               █      │</span>
-            <span class="line">│      █                 █               █      │</span>
-            <span class="line">│                                               │</span>
             <span class="line">│                                               │</span>
             <span class="line">└───────────────────────────────────────────────┘</span>
         </span>
+
+        <span class="graph lazy frame" data-graph="client-server-db#1"></span>
+        <span class="graph lazy frame" data-graph="client-server-db#2"></span>
+        <span class="graph lazy frame" data-graph="client-server-db#3"></span>
+        <span class="graph lazy frame" data-graph="client-server-db#4"></span>
     </div>
     <div class="center space-top-3">
         <a class="graph no-underline" href="https://app.monosketch.io" target="#">
@@ -149,7 +149,7 @@
         <span class="line">│ downloading worker                  time                      time         │</span>
         <span class="line">│       │                               │                        │           │</span>
         <span class="line">│       │              before event     │                        │           │</span>
-        <span class="line">│    ●──┴─────────░░░░░░░░░░░░░░░░░░░░░░████████████████○████████│───┬─────▶ │</span>
+        <span class="line">│    ●──┴─────────░░░░░░░░░░░░░░░░░░░░░░████████████████○████████┴───┬─────▶ │</span>
         <span class="line">│                      ■────────────────────■           │            │       │</span>
         <span class="line">│                   Download           Resources is     │            │       │</span>
         <span class="line">│                   resources          downloaded       │            │       │</span>

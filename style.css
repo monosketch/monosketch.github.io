@@ -50,6 +50,9 @@ p {
   display: block;
   white-space: pre;
 }
+.graph.lazy {
+  white-space: pre;
+}
 
 .space-left-1 {
   margin-left: 20px;
@@ -134,6 +137,22 @@ p {
 }
 .footnote a {
   color: #ddd;
+}
+
+.animation-container {
+  cursor: pointer;
+}
+.animation-container > .frame {
+  display: none;
+}
+.animation-container > .thumbnail {
+  display: initial;
+}
+.animation-container.play > .thumbnail {
+  display: none;
+}
+.animation-container.play > .current {
+  display: initial;
 }
 
 /*# sourceMappingURL=style.css.map */
