@@ -24,6 +24,7 @@ body {
 .background {
     background-image: linear-gradient(to right, $bg-stroke, transparent 1px), linear-gradient(to bottom, $bg-stroke, transparent 1px);
     background-size: $bg-stroke-width $bg-stroke-width * 1;
+    background-position: calc(50% - 0.9rem) calc(50% - 1.55rem);
 }
 
 main {
@@ -46,8 +47,11 @@ main {
     flex-direction: column;
 
     @media ($media-desktop) {
+        justify-content: flex-start;
         width: 27rem;
         margin-right: 1.5rem;
+        margin-top: -0.5rem;
+        flex-shrink: 0;
     }
 
     h1 {
@@ -65,14 +69,15 @@ main {
     }
 
     p {
-        margin-top: 1rem;
+        margin-top: 0.7rem;
         line-height: 1.3rem;
+        margin-bottom: 0.4rem;
     }
 
     .cta-container {
         display: flex;
         justify-content: center;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
 
         a {
             width: 100%;
@@ -109,6 +114,26 @@ main {
             }
         }
     }
+
+    .github {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    
+        a {
+            display: flex;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+    
+        .github-icon {
+            width: 22px;
+            height: 22px;
+            margin-right: 8px;
+            margin-top: -1px;
+        }
+    }    
 }
 
 .demo-space {
@@ -146,24 +171,5 @@ main {
     pre {
         font-family: $font;
         font-size: 0.85rem;
-    }
-}
-
-.github {
-    display: flex;
-    align-items: center;
-    margin-top: 2rem;
-
-    a {
-        display: flex;
-        text-decoration: none;
-        font-size: 0.9rem;
-    }
-
-    .github-icon {
-        width: 22px;
-        height: 22px;
-        margin-right: 8px;
-        margin-top: -1px;
     }
 }
