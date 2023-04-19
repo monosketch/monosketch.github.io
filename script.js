@@ -1,5 +1,7 @@
 const graphs = [
     `
+
+
                   ┌───────────────────────┐                
                   │         Root          │                
                   └───────────□───────────┘                
@@ -85,15 +87,19 @@ const graphs = [
     └───────────────────────────────────────────────────┴────────────┘
     `,
     `
-    ┌──────────────────────────────────────────────────┬──────┐
-    │                                                  │░░░░░░│
-    │ Type something to search                         │░░GO░░│
-    │                                                  │░░░░░░│
-    └──────────────────────────────────────────────────┴──────┘
-                                                               
-           ┌─────────────────────┐ ┌─────────────────────┐     
-           │     Cat search      │ │    I feel lucky     │     
-           └─────────────────────┘ └─────────────────────┘     
+                         /\\_/\\                             
+                        ( o.o )                            
+                         > ^ <                             
+                                                           
+┌──────────────────────────────────────────────────┬──────┐
+│                                                  │░░░░░░│
+│ Type something to search                         │░░GO░░│
+│                                                  │░░░░░░│
+└──────────────────────────────────────────────────┴──────┘
+                                                           
+       ┌─────────────────────┐ ┌─────────────────────┐     
+       │     Cat search      │ │    I feel lucky     │     
+       └─────────────────────┘ └─────────────────────┘     
     `,
     `
              Client                               Server              
@@ -104,7 +110,6 @@ const graphs = [
 │              │                                    ░ACK              
             ACK│◀───────────────────────────────────░                │
 └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
-               │                                    │                 
                │                                    │                 
                │         SSL/TLS Handshake          │                 
 ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
@@ -133,7 +138,15 @@ var index = graphs.length - 1;
 const demoContent = document.querySelector('#demo-content');
 demoContent.innerHTML = graphs[index];
 
-setInterval(() => {
+const demoContentIndicator = document.querySelector(".demo-page-indicators");
+
+const updateDemoContent = () => {
     index = (index + 1) % graphs.length;
     demoContent.innerHTML = graphs[index];
-}, 7000);
+
+    const arr = Array.from({length: graphs.length}, (_, i) => i == index ? '■' : '□');
+    demoContentIndicator.innerText = arr.join('\n');
+}
+
+setInterval(updateDemoContent, 8000);
+updateDemoContent();

@@ -120,53 +120,61 @@ main {
         align-items: center;
         margin-top: 1rem;
         margin-bottom: 1rem;
-    
+
         a {
             display: flex;
             text-decoration: none;
             font-size: 0.9rem;
         }
-    
+
         .github-icon {
             width: 22px;
             height: 22px;
             margin-right: 8px;
             margin-top: -1px;
         }
-    }    
+    }
 }
 
 .demo-space {
     margin-top: 5rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
-
-    flex-direction: column;
-    // background: red;
+    height: 32rem;
+    position: relative;
 
     @media ($media-desktop) {
+        align-items: center;
         width: 50rem;
         margin-top: 0;
         margin-left: 3.5rem;
     }
 
-    nav {
+    .demo-page-indicators {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 0.5rem;
+        justify-content: center;
+        height: 10rem;
+        display: none;
+
+        @media (min-width: 700px) {
+            display: flex;
+            position: absolute;
+            right: -1rem;
+            top: calc(50% - 5rem);
+        }
     }
 }
 
 .demo-container {
-    max-height: 40rem;
+    max-height: 35rem;
     min-height: 20rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     pre {
         font-family: $font;
