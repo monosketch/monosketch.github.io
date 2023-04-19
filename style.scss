@@ -1,0 +1,169 @@
+$font: 'Jetbrains Mono', 'Fira code', 'Courier New', Courier, monospace;
+$bg-stroke: #f0f0f0 1px;
+$bg-stroke-width: 2.3rem;
+
+$media-desktop: "min-width: 1200px";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.background {
+    background-image: linear-gradient(to right, $bg-stroke, transparent 1px), linear-gradient(to bottom, $bg-stroke, transparent 1px);
+    background-size: $bg-stroke-width $bg-stroke-width * 1;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    flex-direction: column;
+
+    @media ($media-desktop) {
+        flex-direction: row;
+    }
+}
+
+.info {
+    width: 100%;
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+
+    @media ($media-desktop) {
+        width: 27rem;
+        margin-right: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #909090;
+    }
+
+    .character {
+        border: 2.5px solid blue;
+    }
+
+    p {
+        margin-top: 1rem;
+        line-height: 1.3rem;
+    }
+
+    .cta-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+
+        a {
+            width: 100%;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            background: transparent;
+            border: 2px solid black;
+            color: black;
+            width: 100%;
+            padding: 0.5rem;
+            font-family: $font;
+            cursor: pointer;
+
+            &:hover {
+                border-color: blue;
+                color: blue;
+            }
+
+            &:active {
+                border-color: #444;
+                color: #444;
+                background-color: rgba(0, 13, 255, 0.06);
+            }
+
+            &:focus {
+                outline: none;
+                border-color: rgb(0, 0, 232);
+                color: rgb(0, 0, 232);
+            }
+        }
+    }
+}
+
+.demo-space {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    flex-direction: column;
+    // background: red;
+
+    @media ($media-desktop) {
+        width: 50rem;
+        margin-top: 0;
+        margin-left: 3.5rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0.5rem;
+    }
+}
+
+.demo-container {
+    max-height: 40rem;
+    min-height: 20rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    pre {
+        font-family: $font;
+        font-size: 0.85rem;
+    }
+}
+
+.github {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+
+    a {
+        display: flex;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .github-icon {
+        width: 22px;
+        height: 22px;
+        margin-right: 8px;
+        margin-top: -1px;
+    }
+}
