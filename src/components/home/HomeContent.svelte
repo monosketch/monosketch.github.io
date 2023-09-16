@@ -3,6 +3,7 @@
     import VSpace from "../shared/VSpace.svelte";
     import PageTitle from "./HomeInfo.svelte";
     import GithubCta from "./GithubCta.svelte";
+    import DemoSpace from "./DemoSpace.svelte";
 </script>
 
 <main class="container">
@@ -14,10 +15,5 @@
         <CtaButton url="https://app.monosketch.io/" title="Start sketching"/>
         <GithubCta/>
     </div>
-    <div class="demo-space">
-        <div class="demo-container">
-            <pre id="demo-content"></pre>
-        </div>
-        <div class="demo-page-indicators"></div>
-    </div>
+    <DemoSpace/>
 </main>
