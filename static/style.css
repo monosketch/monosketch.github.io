@@ -10,7 +10,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem; }
+  width: 100%; }
 
 .background {
   background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px), linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
@@ -23,19 +23,3 @@ main {
   align-items: center;
   width: 100%;
   flex-direction: column; }
-  @media (min-width: 1200px) {
-    main {
-      flex-direction: row; } }
-
-.info {
-  width: 100%;
-  max-width: 35rem;
-  display: flex;
-  flex-direction: column; }
-  @media (min-width: 1200px) {
-    .info {
-      justify-content: flex-start;
-      width: 27rem;
-      margin-right: 1.5rem;
-      margin-top: -0.5rem;
-      flex-shrink: 0; } }

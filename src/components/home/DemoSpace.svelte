@@ -1,5 +1,6 @@
 <script>
     import {graphs} from "$lib/graphs.js";
+    import DemoContent from "./DemoContent.svelte";
 
     let index = graphs.length - 1;
     let demoContent = graphs[index];
@@ -14,7 +15,7 @@
 
 <div class="demo-space">
     <div class="demo-container">
-        <pre id="demo-content"> {demoContent} </pre>
+        <DemoContent value="{demoContent}"/>
     </div>
     <pre class="demo-page-indicators">{demoContentIndicator}</pre>
 </div>
