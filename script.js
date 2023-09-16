@@ -174,7 +174,7 @@ const updateDemoContent = () => {
     index = (index + 1) % graphs.length;
     demoContent.innerHTML = graphs[index];
 
-    const arr = Array.from({length: graphs.length}, (_, i) => i == index ? '■' : '□');
+    const arr = Array.from({length: graphs.length}, (_, i) => i === index ? '■' : '□');
     demoContentIndicator.innerText = arr.join('\n');
 }
 
