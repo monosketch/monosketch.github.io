@@ -1,18 +1,18 @@
 <script>
     import HomeHeader from "./HomeHeader.svelte";
     import OpenSource from "./OpenSource.svelte";
-    import Wonder from "../shared/Wonder.svelte";
-    import StackAndQueue from "./StackAndQueue.svelte";
+    import Wonder from "./Wonder.svelte";
     import ClientServer from "./ClientServer.svelte";
     import FooterNav from "../FooterNav.svelte";
     import AppLayout from "./AppLayout.svelte";
+    import BuildingBlocks from "./BuildingBlocks.svelte";
 </script>
 
 <main class="container">
     <HomeHeader/>
     <OpenSource/>
     <Wonder/>
-    <StackAndQueue/>
+    <BuildingBlocks/>
     <ClientServer/>
     <AppLayout/>
     <FooterNav/>

@@ -1,9 +1,9 @@
 <script>
-    import Space from "./Space.svelte";
+    import Space from "../shared/Space.svelte";
 </script>
 
 <section class="grain-background">
-    <h1>Wonder what can we do with MonoSketch?</h1>
+    <h1>Start simple</h1>
     <Space height="1rem" />
     <h2>See examples</h2>
 </section>
@@ -15,14 +15,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 8rem 2rem;
-        background-color: #8C3333;
+        padding: 4rem 2rem;
+        background-color: #519259;
         color: white;
     }
 
     h1 {
         text-align: center;
-        font-size: 3em;
+        font-size: 2.5em;
         font-weight: 200;
     }
 
