@@ -1,10 +1,9 @@
 <script>
-    import GithubCta from "./GithubCta.svelte";
     import PageInfo from "./HomePageInfo.svelte";
     import CtaButton from "../shared/CtaButton.svelte";
     import VSpace from "../shared/VSpace.svelte";
     import DemoContent from "./DemoContent.svelte";
-    import {circus, catHello} from "$lib/graphs.js";
+    import {circus} from "$lib/graphs.js";
 </script>
 <div class="header-background">
     <div class="header-container">
@@ -13,7 +12,6 @@
 
             <VSpace space="2.5rem"/>
             <CtaButton url="https://app.monosketch.io/" title="Start sketching" darkMode={true}/>
-            <GithubCta/>
         </div>
         <div class="demo-container">
             <DemoContent value="{circus}" isEditable="{true}" />
@@ -31,7 +29,7 @@
         width: 100%;
         background: #213555;
         color: white;
-        height: 95vh;
+        height: 85vh;
     }
 
     .header-container {

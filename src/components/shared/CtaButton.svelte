@@ -1,6 +1,6 @@
 <script>
     /** @type {string} */
-    export let title;
+    export let title = "";
 
     /** @type {string} */
     export let url;
@@ -14,7 +14,13 @@
 
 <div class="cta-container" class:dark={darkMode}>
     <a href="{url}" target={target}>
-        <button>{title}</button>
+        <button>
+            {#if title}
+                {title}
+            {:else}
+                <slot></slot>
+            {/if}
+        </button>
     </a>
 </div>
 
@@ -37,7 +43,7 @@
         border: 2px solid #000;
         color: #000;
         width: 100%;
-        padding: 0.7rem 1rem;
+        padding: 0.7rem 2rem;
         font-size: 1rem;
         font-family: "Jetbrains Mono", "Fira code", "Courier New", Courier, monospace;
         cursor: pointer;
@@ -46,7 +52,7 @@
     .cta-container button:hover {
         /*border-color: blue;*/
         /*color: blue;*/
-        background: #ddd;
+        background: #FFCC70;
         text-shadow: 1.5px 1.5px 1px #fff;
         /*box-shadow: 1px 1px 1px #000;*/
     }
@@ -59,14 +65,13 @@
 
     .cta-container button:focus {
         outline: none;
-        border-color: #0000e8;
-        color: #0000e8;
     }
 
     .cta-container.dark button {
         border-color: #fff;
         color: #fff;
     }
+
     .cta-container.dark button:hover {
         background: #22668D;
         font-weight: bold;

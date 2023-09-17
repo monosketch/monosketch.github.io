@@ -1,9 +1,12 @@
 <script>
     import VSpace from "../shared/VSpace.svelte";
+    import NonBreak from "../shared/NonBreak.svelte";
 </script>
 
 <h2 id="brand-name">MonoSketch [*]</h2>
-<h1>Unleash your ideas <span class="non-break">with ASCII <span class="character">&nbsp;</span></span></h1>
+<h1>Unleash your ideas
+    <NonBreak>with ASCII <span class="character">&nbsp;</span></NonBreak>
+</h1>
 <VSpace space="0.5rem"/>
 <p>MonoSketch is a powerful ASCII sketching and diagramming app that lets you effortlessly transform your
     ideas into visually stunning designs.</p>
@@ -30,10 +33,6 @@
         font-size: 1.2rem;
         line-height: 1.7rem;
         margin-bottom: 0.4rem;
-    }
-
-    .non-break {
-        white-space: nowrap;
     }
 
     @media (max-width: 76rem) {
