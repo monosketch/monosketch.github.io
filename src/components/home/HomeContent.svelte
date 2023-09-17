@@ -5,6 +5,7 @@
     import StackAndQueue from "./StackAndQueue.svelte";
     import ClientServer from "./ClientServer.svelte";
     import FooterNav from "../FooterNav.svelte";
+    import AppLayout from "./AppLayout.svelte";
 </script>
 
 <main class="container">
@@ -13,7 +14,7 @@
     <Wonder/>
     <StackAndQueue/>
     <ClientServer/>
-
+    <AppLayout/>
     <FooterNav/>
 </main>
 
