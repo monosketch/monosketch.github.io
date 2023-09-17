@@ -7,10 +7,12 @@
 
     export let openInNewTab = true;
 
+    export let darkMode = false;
+
     let target = openInNewTab ? "_blank" : "";
 </script>
 
-<div class="cta-container">
+<div class="cta-container" class:dark={darkMode}>
     <a href="{url}" target={target}>
         <button>{title}</button>
     </a>
@@ -32,17 +34,21 @@
 
     .cta-container button {
         background: transparent;
-        border: 2px solid black;
-        color: black;
+        border: 2px solid #000;
+        color: #000;
         width: 100%;
-        padding: 0.5rem;
+        padding: 0.7rem 1rem;
+        font-size: 1rem;
         font-family: "Jetbrains Mono", "Fira code", "Courier New", Courier, monospace;
         cursor: pointer;
     }
 
     .cta-container button:hover {
-        border-color: blue;
-        color: blue;
+        /*border-color: blue;*/
+        /*color: blue;*/
+        background: #ddd;
+        text-shadow: 1.5px 1.5px 1px #fff;
+        /*box-shadow: 1px 1px 1px #000;*/
     }
 
     .cta-container button:active {
@@ -55,5 +61,15 @@
         outline: none;
         border-color: #0000e8;
         color: #0000e8;
+    }
+
+    .cta-container.dark button {
+        border-color: #fff;
+        color: #fff;
+    }
+    .cta-container.dark button:hover {
+        background: #22668D;
+        font-weight: bold;
+        text-shadow: 1.5px 1.5px 1px #000;
     }
 </style>

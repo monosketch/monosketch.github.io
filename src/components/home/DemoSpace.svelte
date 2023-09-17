@@ -64,9 +64,4 @@
         justify-content: center;
         flex-direction: column;
     }
-
-    .demo-container pre {
-        font-family: "Jetbrains Mono", "Fira code", "Courier New", Courier, monospace;
-        font-size: 0.85rem;
-    }
 </style>

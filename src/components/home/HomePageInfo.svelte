@@ -12,7 +12,8 @@
     h1 {
         font-size: 2.4rem;
         font-weight: 400;
-        margin: 0.8rem 0 0.4rem 0;
+        margin: 0.8rem 0 0.8rem 0;
+        line-height: 3.5rem;
     }
 
     h2 {

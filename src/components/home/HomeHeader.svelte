@@ -12,7 +12,7 @@
             <PageInfo/>
 
             <VSpace space="2.5rem"/>
-            <CtaButton url="https://app.monosketch.io/" title="Start sketching"/>
+            <CtaButton url="https://app.monosketch.io/" title="Start sketching" darkMode={true}/>
             <GithubCta/>
         </div>
         <div class="demo-container">
