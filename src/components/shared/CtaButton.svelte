@@ -12,9 +12,9 @@
     let target = openInNewTab ? "_blank" : "";
 </script>
 
-<div class="cta-container" class:dark={darkMode}>
+<div class="cta-container" class:dark={darkMode} class:light={!darkMode}>
     <a href="{url}" target={target}>
-        <button>
+        <button class="grain-background">
             {#if title}
                 {title}
             {:else}
@@ -39,9 +39,8 @@
     }
 
     .cta-container button {
-        background: transparent;
-        border: 2px solid #000;
-        color: #000;
+        border: 2px solid #EA5455;
+        color: #EA5455;
         width: 100%;
         padding: 0.7rem 2rem;
         font-size: 1rem;
@@ -49,18 +48,17 @@
         cursor: pointer;
     }
 
+    .cta-container.light button {
+        background: #fff;
+    }
+
     .cta-container button:hover {
-        /*border-color: blue;*/
-        /*color: blue;*/
-        background: #FFCC70;
-        text-shadow: 1.5px 1.5px 1px #fff;
-        /*box-shadow: 1px 1px 1px #000;*/
+        background-color: #FF6D60;
+        color: white;
     }
 
     .cta-container button:active {
-        border-color: #444;
-        color: #444;
-        background-color: rgba(0, 13, 255, 0.06);
+        background: #F45050;
     }
 
     .cta-container button:focus {
@@ -68,13 +66,18 @@
     }
 
     .cta-container.dark button {
+        background-color: #22668D;
         border-color: #fff;
         color: #fff;
     }
 
     .cta-container.dark button:hover {
-        background: #22668D;
-        font-weight: bold;
         text-shadow: 1.5px 1.5px 1px #000;
+        box-shadow: 2.5px 2.5px 1px #000;
+    }
+
+    .cta-container.dark button:active {
+        text-shadow: 1px 1px 0px #000;
+        box-shadow: 1px 1px 0px #000;
     }
 </style>

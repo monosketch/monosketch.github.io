@@ -1,6 +1,6 @@
 <script>
     import {stack, queue} from "$lib/graphs.js";
-    import DemoContent from "./DemoContent.svelte";
+    import DemoContent from "../shared/DemoContent.svelte";
     import Space from "../shared/Space.svelte";
 </script>
 <section>
@@ -18,11 +18,6 @@
 
 <style>
     section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
         padding: 5rem 0;
     }
 

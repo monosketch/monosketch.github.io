@@ -2,7 +2,7 @@
     import Space from "../shared/Space.svelte";
 </script>
 
-<section class="grain-background">
+<section>
     <h1>More samples</h1>
     <Space height="1rem" />
     <h2>See examples</h2>
@@ -10,14 +10,8 @@
 
 <style>
     section {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         padding: 4rem 2rem;
         background-color: white;
-        /*color: white;*/
     }
 
     h1 {

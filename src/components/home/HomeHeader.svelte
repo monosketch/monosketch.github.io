@@ -2,7 +2,7 @@
     import PageInfo from "./HomePageInfo.svelte";
     import CtaButton from "../shared/CtaButton.svelte";
     import Space from "../shared/Space.svelte";
-    import DemoContent from "./DemoContent.svelte";
+    import DemoContent from "../shared/DemoContent.svelte";
     import {circus} from "$lib/graphs.js";
 </script>
 
@@ -23,11 +23,7 @@
 
 <style>
     section {
-        display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
         background-color: #374259;
         color: white;
         height: 90vh;

@@ -1,7 +1,7 @@
 <script>
     import {appLayoutCatSearch, appLayoutForm, appLayoutMonoSketch} from "$lib/graphs.js";
     import Space from "../shared/Space.svelte";
-    import DemoContent from "./DemoContent.svelte";
+    import DemoContent from "../shared/DemoContent.svelte";
     import {onMount, onDestroy} from 'svelte';
 
     let currentSlide = 0;
@@ -56,11 +56,6 @@
 
 <style>
     section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
         padding: 4rem 0;
         background-color: #fff;
         background-position: 1.3rem 1.85rem;

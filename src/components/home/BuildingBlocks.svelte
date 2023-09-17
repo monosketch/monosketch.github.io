@@ -1,6 +1,6 @@
 <script>
     import {buildingBlocks, buildingBlocks2, simpleGraph} from "$lib/graphs.js";
-    import DemoContent from "./DemoContent.svelte";
+    import DemoContent from "../shared/DemoContent.svelte";
     import Space from "../shared/Space.svelte";
     import CtaButton from "../shared/CtaButton.svelte";
 </script>
@@ -35,11 +35,6 @@
 
 <style>
     section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
         padding: 3rem 0;
         background-color: #519259;
         color: white;

@@ -6,6 +6,7 @@
     import FooterNav from "../FooterNav.svelte";
     import AppLayout from "./AppLayout.svelte";
     import BuildingBlocks from "./BuildingBlocks.svelte";
+    import Presentation from "./Presentation.svelte";
 </script>
 
 <main class="container">
@@ -15,6 +16,7 @@
     <Wonder/>
     <ClientServer/>
     <AppLayout/>
+    <Presentation/>
     <FooterNav/>
 </main>
 

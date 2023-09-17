@@ -1,5 +1,5 @@
 <script>
-    import DemoContent from "./DemoContent.svelte";
+    import DemoContent from "../shared/DemoContent.svelte";
     import {catHello} from "$lib/graphs.js";
     import Space from "../shared/Space.svelte";
     import CtaButton from "../shared/CtaButton.svelte";
@@ -36,10 +36,6 @@
 
 <style>
     section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         padding: 2em 0;
     }
 

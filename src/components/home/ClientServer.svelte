@@ -1,6 +1,6 @@
 <script>
     import {clientServer, clientServer2} from "$lib/graphs.js";
-    import DemoContent from "./DemoContent.svelte";
+    import DemoContent from "../shared/DemoContent.svelte";
     import Space from "../shared/Space.svelte";
 </script>
 
@@ -27,12 +27,7 @@
 
 <style>
     section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
         flex-wrap: wrap;
-        width: 100%;
         background-color: #A3423C;
         color: white;
         padding: 4rem 2rem;
