@@ -1,6 +1,6 @@
 <script>
     import {appLayoutCatSearch, appLayoutForm, appLayoutMonoSketch} from "$lib/graphs.js";
-    import VSpace from "../shared/VSpace.svelte";
+    import Space from "../shared/Space.svelte";
     import DemoContent from "./DemoContent.svelte";
     import {onMount, onDestroy} from 'svelte';
 
@@ -35,9 +35,9 @@
 
 </script>
 
-<section>
+<section class="background">
     <h1>UI mockup</h1>
-    <VSpace space="1rem"/>
+    <Space height="2rem"/>
 
     <div class="carousel-container ">
         <div class="carousel" style="width: {items.length*100}%;transform: translateX(-{currentSlide * 100 / items.length}%)">
@@ -51,6 +51,7 @@
             {/each}
         </div>
     </div>
+    <Space height="2rem"/>
 </section>
 
 <style>
@@ -60,7 +61,9 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding: 5rem 0;
+        padding: 4rem 0;
+        background-color: #fff;
+        background-position: 1.3rem 1.85rem;
     }
 
     h1 {
@@ -68,20 +71,8 @@
         font-weight: 200;
     }
 
-    .graph-item {
-        margin: 0 1rem;
-        font-size: calc(min(0.9rem, 0.6vw + 5px));
-    }
-
-    @media (max-width: 76rem) {
-        .graph-item {
-            margin: 1rem 0 0;
-        }
-    }
-
     .carousel-container {
         width: 100%;
-        max-width: 60rem;
         overflow: hidden;
     }
 
@@ -96,5 +87,10 @@
         width: 100%;
         justify-content: flex-start;
         align-items: center;
+    }
+
+    .graph-item {
+        margin: 0 1rem;
+        font-size: calc(min(1.2rem, 0.6vw + 7px));
     }
 </style>

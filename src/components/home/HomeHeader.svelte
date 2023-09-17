@@ -1,7 +1,7 @@
 <script>
     import PageInfo from "./HomePageInfo.svelte";
     import CtaButton from "../shared/CtaButton.svelte";
-    import VSpace from "../shared/VSpace.svelte";
+    import Space from "../shared/Space.svelte";
     import DemoContent from "./DemoContent.svelte";
     import {circus} from "$lib/graphs.js";
 </script>
@@ -11,7 +11,7 @@
         <div class="info">
             <PageInfo/>
 
-            <VSpace space="2.5rem"/>
+            <Space height="2.5rem"/>
             <CtaButton url="https://app.monosketch.io/" title="Start sketching" darkMode={true}/>
         </div>
         <div class="demo-container">

@@ -1,11 +1,11 @@
 <script>
     import {stack, queue} from "$lib/graphs.js";
     import DemoContent from "./DemoContent.svelte";
-    import VSpace from "../shared/VSpace.svelte";
+    import Space from "../shared/Space.svelte";
 </script>
 <section>
     <h1>Simple data structure</h1>
-    <VSpace space="1rem"/>
+    <Space height="1rem"/>
     <div class="graph">
         <div class="graph-item">
             <DemoContent value="{stack}" isEditable="{true}"/>

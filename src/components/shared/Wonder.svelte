@@ -1,10 +1,10 @@
 <script>
-    import VSpace from "./VSpace.svelte";
+    import Space from "./Space.svelte";
 </script>
 
 <section class="grain-background">
     <h1>Wonder what can we do with MonoSketch?</h1>
-    <VSpace space="1rem" />
+    <Space height="1rem" />
     <h2>See examples</h2>
 </section>
 

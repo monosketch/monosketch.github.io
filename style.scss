@@ -22,7 +22,7 @@ body {
 .background {
     background-image: linear-gradient(to right, $bg-stroke, transparent 1px), linear-gradient(to bottom, $bg-stroke, transparent 1px);
     background-size: $bg-stroke-width $bg-stroke-width * 1;
-    background-position: calc(50% - 0.9rem) calc(50% - 1.55rem);
+    background-position: 1rem 1rem;
 }
 
 .grain-background {

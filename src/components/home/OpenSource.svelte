@@ -1,7 +1,7 @@
 <script>
     import DemoContent from "./DemoContent.svelte";
     import {catHello} from "$lib/graphs.js";
-    import VSpace from "../shared/VSpace.svelte";
+    import Space from "../shared/Space.svelte";
     import CtaButton from "../shared/CtaButton.svelte";
     import Github from "../shared/icon/Github.svelte";
     import NonBreak from "../shared/NonBreak.svelte";
@@ -9,11 +9,11 @@
 </script>
 
 <section>
-    <VSpace space="0.5em"/>
+    <Space height="0.5em"/>
     <div class="graph">
         <DemoContent value="{catHello}"/>
     </div>
-    <VSpace space="2em"/>
+    <Space height="2em"/>
     <h1>MonoSketch is <NonBreak>Open source</NonBreak></h1>
     <p>
         I'm passionate about creating ASCII graphs, versatile visual aids for demonstrations and code integration.
@@ -21,7 +21,7 @@
     <p>
         After an unsuccessful search for a good solution, I was inspired to embark on this project.
     </p>
-    <VSpace space="3em"/>
+    <Space height="3em"/>
     <CtaButton url="https://github.com/tuanchauict/MonoSketch">
         <div class="cta">
             <div class="github-icon">
@@ -30,7 +30,7 @@
             Explore the source code
         </div>
     </CtaButton>
-    <VSpace space="2em"/>
+    <Space height="2em"/>
 
 </section>
 
