@@ -14,7 +14,7 @@
         <DemoContent value="{catHello}"/>
     </div>
     <Space height="2em"/>
-    <h1>MonoSketch is <NonBreak>Open source</NonBreak></h1>
+    <h1 class="section-title">MonoSketch is <NonBreak>Open source</NonBreak></h1>
     <p>
         I'm passionate about creating ASCII graphs, versatile visual aids for demonstrations and code integration.
     </p>
@@ -44,10 +44,7 @@
     }
 
     h1 {
-        font-size: 2rem;
-        font-weight: 200;
         margin: 0 0 1rem;
-        padding: 0 2rem;
         text-align: center;
     }
 

@@ -11,8 +11,8 @@
 <main class="container">
     <HomeHeader/>
     <OpenSource/>
-    <Wonder/>
     <BuildingBlocks/>
+    <Wonder/>
     <ClientServer/>
     <AppLayout/>
     <FooterNav/>

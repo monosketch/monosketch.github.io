@@ -6,7 +6,7 @@
 
 <section class="grain-background">
     <div class="container">
-        <h1>Client - Server<br/>communication</h1>
+        <h1 class="section-title">Client - Server<br/>communication</h1>
         <div class="graph">
             <div class="graph-item">
                 <DemoContent value="{clientServer}" isEditable="{true}"/>
@@ -21,7 +21,7 @@
                 <DemoContent value="{clientServer2}" isEditable="{true}"/>
             </div>
         </div>
-        <h1>App System</h1>
+        <h1 class="section-title">App<br/>System</h1>
     </div>
 </section>
 
@@ -33,7 +33,7 @@
         align-content: center;
         flex-wrap: wrap;
         width: 100%;
-        background-color: #377D71;
+        background-color: #A3423C;
         color: white;
         padding: 4rem 2rem;
     }
@@ -53,8 +53,6 @@
     }
 
     h1 {
-        font-size: 2rem;
-        font-weight: 200;
         margin: 5rem 2rem;
     }
 

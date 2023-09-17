@@ -4,7 +4,10 @@
     import Space from "../shared/Space.svelte";
     import CtaButton from "../shared/CtaButton.svelte";
 </script>
-<section>
+<section class="grain-background">
+    <Space height="1rem"/>
+    <h1 class="section-title">Start simple</h1>
+    <Space height="2rem"/>
     <div class="graph">
         <div class="item-group">
             <div class="graph-item">
@@ -26,7 +29,7 @@
 
     <Space height="3rem"/>
     <div class="cta-container">
-        <CtaButton url="https://app.monosketch.io/" title="Start sketching" darkMode={false}/>
+        <CtaButton url="https://app.monosketch.io/" title="Start sketching" darkMode={true}/>
     </div>
 </section>
 
@@ -38,11 +41,8 @@
         align-items: center;
         width: 100%;
         padding: 3rem 0;
-    }
-
-    h1 {
-        font-size: 2rem;
-        font-weight: 200;
+        background-color: #519259;
+        color: white;
     }
 
     h2 {

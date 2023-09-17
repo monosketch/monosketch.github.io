@@ -3,7 +3,7 @@
 </script>
 
 <section class="grain-background">
-    <h1>Start simple</h1>
+    <h1>More samples</h1>
     <Space height="1rem" />
     <h2>See examples</h2>
 </section>
@@ -16,8 +16,8 @@
         justify-content: center;
         align-items: center;
         padding: 4rem 2rem;
-        background-color: #519259;
-        color: white;
+        background-color: white;
+        /*color: white;*/
     }
 
     h1 {

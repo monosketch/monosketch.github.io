@@ -48,20 +48,20 @@ export const catHello =
  > ^ <`;
 
 export const buildingBlocks = `
-  Rectangle               Line                 Text box   
-┌────────────┐                              ┌────────────┐
-│            │       ───────────────        │            │
-│            │                              │    Text    │
-│            │                              │            │
-└────────────┘                              └────────────┘`;
+  Rectangle            Line             Text box   
+┌────────────┐                       ┌────────────┐
+│            │    ───────────────    │            │
+│            │                       │    Text    │
+│            │                       │            │
+└────────────┘                       └────────────┘`;
 
 export const buildingBlocks2 = `
-  Rectangle               Line                 Text box   
-╭────────────╮                              ╔ ═ ═ ═ ═ ═ ═ 
-│            │       ■━━━━━━━━━━━━━▶         ████Text████║
-│            │                              ║████████████ 
-│            │                               ████████████║
-╰────────────╯                              ╚ ═ ═ ═ ═ ═ ═ `;
+  Rectangle            Line             Text box   
+╭────────────╮                       ╔ ═ ═ ═ ═ ═ ═ 
+│            │    ■━━━━━━━━━━━━━▶     ████████████║
+│            │                       ║Text████████ 
+│            │                        ████████████║
+╰────────────╯                       ╚ ═ ═ ═ ═ ═ ═ `;
 export const simpleGraph = `
 ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
  Network Interface                             │
