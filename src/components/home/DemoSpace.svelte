@@ -10,7 +10,7 @@
 
     setInterval(() => {
         index = (index + 1) % graphs.length;
-    }, 1000);
+    }, 8000);
 </script>
 
 <div class="demo-space">
