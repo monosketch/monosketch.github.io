@@ -1,4 +1,4 @@
-<section>
+<section class="grain-background">
     <h1>Wonder what can we do with MonoSketch?</h1>
 </section>
 
@@ -9,7 +9,7 @@
         justify-content: center;
         align-items: center;
         padding: 8rem 2rem;
-        background: #141E46;
+        background-color: #8C3333;
     }
 
     h1 {
@@ -18,4 +18,5 @@
         font-weight: 200;
         color: white;
     }
+
 </style>

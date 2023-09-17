@@ -5,7 +5,8 @@
     import DemoContent from "./DemoContent.svelte";
     import {circus} from "$lib/graphs.js";
 </script>
-<div class="header-background">
+
+<section class="grain-background">
     <div class="header-container">
         <div class="info">
             <PageInfo/>
@@ -18,18 +19,18 @@
         </div>
 
     </div>
-</div>
+</section>
 
 <style>
-    .header-background {
+    section {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         width: 100%;
-        background: #213555;
+        background-color: #374259;
         color: white;
-        height: 85vh;
+        height: 90vh;
     }
 
     .header-container {
@@ -46,16 +47,15 @@
         width: 32rem;
         flex-shrink: 0;
         padding: 2rem;
-        /*outline: 1px solid #ff0000;*/
     }
 
     .demo-container {
         padding: 0 2rem;
-        /*outline: 1px solid #ff0000;*/
+        font-size: calc(min(0.9rem, 0.6vw + 7px));
     }
 
     @media (max-width: 76rem) {
-        .header-background {
+        section {
             height: auto;
         }
         .header-container {
@@ -76,6 +76,7 @@
             padding-bottom: 2rem;
             display: flex;
             justify-content: center;
+            font-size: calc(min(1.2rem, 0.6vw + 7px));
         }
     }
 </style>

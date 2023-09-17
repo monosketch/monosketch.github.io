@@ -35,8 +35,7 @@ Capacitor      │         │           │3                  C│    │    �
                                                   │ │in Serie                
                                                   ╰┬╯                        
                                                    │                         
-                                                  GND                        
-`;
+                                                  GND`;
 
 export const catHello =
 `
@@ -46,8 +45,7 @@ export const catHello =
         ╭─┼──────────────╯
  /\\_/\\  ╰─╯               
 ( o.o )                   
- > ^ <                    
-`
+ > ^ <`
 
 export const graphs = [
     `

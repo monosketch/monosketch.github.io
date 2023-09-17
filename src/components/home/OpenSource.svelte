@@ -9,7 +9,7 @@
 </script>
 
 <section>
-    <VSpace space="1em"/>
+    <VSpace space="0.5em"/>
     <div class="graph">
         <DemoContent value="{catHello}"/>
     </div>
