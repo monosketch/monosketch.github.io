@@ -1,5 +1,12 @@
-<section>
-Footer
+<section class="grain-background">
+    <div class="container">
+        <div>
+            Copyright 2023&nbsp;<a href="https://github.com/tuanchauict">@tuanchauict</a>
+        </div>
+        <div>
+            <a href="/commerce-disclosure">Commerce disclosure</a>
+        </div>
+    </div>
 </section>
 
 <style>
@@ -8,7 +15,22 @@ Footer
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 20rem;
         background-color: #374259;
+        padding: 2rem 2rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        color: #fff;
+        font-size: 0.9rem;
+    }
+
+    a {
+        color: #78C1F3;
+        text-decoration: none;
     }
 </style>
