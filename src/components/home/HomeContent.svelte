@@ -7,9 +7,12 @@
     import AppLayout from "./AppLayout.svelte";
     import BuildingBlocks from "./BuildingBlocks.svelte";
     import Presentation from "./Presentation.svelte";
+    import Contribution from "./Contribution.svelte";
+    import PageHeader from "../PageHeader.svelte";
 </script>
 
 <main class="container">
+    <PageHeader/>
     <HomeHeader/>
     <OpenSource/>
     <BuildingBlocks/>
@@ -17,7 +20,7 @@
     <ClientServer/>
     <AppLayout/>
     <Presentation/>
-    <Wonder title="Contribution"/>
+    <Contribution/>
     <FooterNav/>
 </main>
 

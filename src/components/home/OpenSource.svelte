@@ -15,6 +15,7 @@
     </div>
     <Space height="2em"/>
     <h1 class="section-title">MonoSketch is <NonBreak>Open source</NonBreak></h1>
+
     <p class="section-subtitle">
         I'm passionate about creating ASCII graphs, versatile visual aids for demonstrations and code integration.
     </p>

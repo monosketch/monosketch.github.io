@@ -41,7 +41,7 @@
     }
 
     .graph-item {
-        color: black;
+        color: #662549;
         border: 1px solid #ccc;
         padding: 1rem;
         width: 32rem;

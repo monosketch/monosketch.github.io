@@ -5,7 +5,7 @@
     import CtaButton from "../shared/CtaButton.svelte";
 </script>
 <section class="grain-background">
-    <Space height="1rem"/>
+    <Space height="4rem"/>
     <h1 class="section-title">Start simple</h1>
     <Space height="2rem"/>
     <div class="graph">
@@ -31,11 +31,11 @@
     <div class="cta-container">
         <CtaButton url="https://app.monosketch.io/" title="Start sketching" darkMode={true}/>
     </div>
+    <Space height="4rem"/>
 </section>
 
 <style>
     section {
-        padding: 3rem 0;
         background-color: #519259;
         color: white;
     }
