@@ -8,6 +8,8 @@
 
     const baseRepoUrl = "https://github.com/tuanchauict/MonoSketch";
     const licenseUrl = baseRepoUrl + "/blob/main/LICENSE";
+
+    let isSupportEnabled = false;
 </script>
 
 <section>
@@ -30,9 +32,14 @@
                     MonoSketch on GitHub
                 </div>
             </CtaButton>
-            <Space height="4rem"/>
-            <SponsorList/>
+            {#if isSupportEnabled}
+                <Space height="4rem"/>
+                <SponsorList/>
+            {/if}
+
         </div>
+
+
         <Space height="4rem"/>
         <div class="graph">
             <DemoContent value="{contributionCats}"/>
@@ -60,7 +67,7 @@
 
 
     .graph {
-        color: #AE445A;
+        color: #F39F5A;
         font-size: calc(min(1.2rem, 0.8vw + 5px));
     }
 
