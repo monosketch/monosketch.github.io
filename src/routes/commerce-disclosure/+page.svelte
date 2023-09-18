@@ -3,5 +3,5 @@
     import CommerceDisclosure from "../../components/commerce-disclosure/CommerceDisclosure.svelte";
 </script>
 
-<HtmlHead title="MonoSketch - Unleash your ideas with ASCII" />
+<HtmlHead title="Commerce disclosure" />
 <CommerceDisclosure/>

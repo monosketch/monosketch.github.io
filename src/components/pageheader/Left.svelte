@@ -1,5 +1,5 @@
 <div class="brand">
-    <h1> MonoSketch [*]</h1>
+    <h1><a href="/">MonoSketch [*]</a></h1>
 </div>
 
 <style>
@@ -9,5 +9,10 @@
 
     h1 {
         font-size: 1.3rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
     }
 </style>
