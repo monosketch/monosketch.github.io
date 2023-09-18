@@ -15,10 +15,10 @@
     </div>
     <Space height="2em"/>
     <h1 class="section-title">MonoSketch is <NonBreak>Open source</NonBreak></h1>
-    <p>
+    <p class="section-subtitle">
         I'm passionate about creating ASCII graphs, versatile visual aids for demonstrations and code integration.
     </p>
-    <p>
+    <p class="section-subtitle">
         After an unsuccessful search for a good solution, I was inspired to embark on this project.
     </p>
     <Space height="3em"/>
@@ -47,15 +47,6 @@
     .graph {
         margin-left: 8rem;
         font-size: 1.2rem;
-    }
-
-    p {
-        max-width: 50rem;
-        margin: 0.5rem 2rem;
-        text-align: center;
-        font-size: 1.2rem;
-        font-style: italic;
-        font-weight: 200;
     }
 
     .cta {

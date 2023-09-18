@@ -1,11 +1,17 @@
 <script>
     import Space from "../shared/Space.svelte";
+
+    /** @type {string} */
+    export let title;
+    export let description = '';
 </script>
 
 <section>
-    <h1>More samples</h1>
-    <Space height="1rem" />
-    <h2>See examples</h2>
+    <h1>{title}</h1>
+    <Space height="1rem"/>
+    {#if {description}}
+        <h2>See examples</h2>
+    {/if}
 </section>
 
 <style>

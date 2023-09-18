@@ -13,10 +13,11 @@
     <HomeHeader/>
     <OpenSource/>
     <BuildingBlocks/>
-    <Wonder/>
+    <Wonder title="More examples"/>
     <ClientServer/>
     <AppLayout/>
     <Presentation/>
+    <Wonder title="Contribution"/>
     <FooterNav/>
 </main>
 

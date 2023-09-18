@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -32,3 +33,19 @@ section {
   font-weight: 200;
   margin: 0;
   padding: 0 2rem; }
+
+.section-subtitle {
+  max-width: 50rem;
+  margin: 0.5rem 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 200; }
+
+.quote:before {
+  content: '“';
+  font-size: 3rem; }
+
+.quote:after {
+  content: '”';
+  font-size: 3rem; }
