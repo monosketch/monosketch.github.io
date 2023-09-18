@@ -2,6 +2,9 @@
     import {presentationAscii, presentationGithubAction} from "$lib/graphs.js";
     import DemoContent from "../shared/DemoContent.svelte";
     import Space from "../shared/Space.svelte";
+
+    const presentationAsciiUrl = "https://gist.github.com/tuanchauict/304bc45e749c37dff7606f64f83074a5";
+    const presentationGithubActionUrl = "https://gist.github.com/tuanchauict/4c416c2b2cb957b27670e8d3faea7812";
 </script>
 
 <section class="grain-background">
@@ -11,10 +14,10 @@
     <p class="section-subtitle quote">Thanks to MonoSketch, I no longer rely on Power Point or Google Presentations to craft my presentations.</p>
     <Space height="1rem"/>
     <div class="graph">
-        <a class="graph-item" href="">
+        <a class="graph-item" href="{presentationAsciiUrl}" target="_blank">
             <DemoContent value="{presentationAscii}" isEditable="{false}"/>
         </a>
-        <a class="graph-item" href="">
+        <a class="graph-item" href="{presentationGithubActionUrl}" target="_blank">
             <DemoContent value="{presentationGithubAction}" isEditable="{false}"/>
         </a>
     </div>

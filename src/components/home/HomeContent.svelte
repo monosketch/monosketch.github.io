@@ -3,7 +3,7 @@
     import OpenSource from "./OpenSource.svelte";
     import Wonder from "./Wonder.svelte";
     import ClientServer from "./ClientServer.svelte";
-    import FooterNav from "../FooterNav.svelte";
+    import FooterNav from "../PageFooterNav.svelte";
     import AppLayout from "./AppLayout.svelte";
     import BuildingBlocks from "./BuildingBlocks.svelte";
     import Presentation from "./Presentation.svelte";

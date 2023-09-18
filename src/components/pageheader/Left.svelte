@@ -1,5 +1,9 @@
+<script>
+    const basePath = import.meta.env.BASE_URL;
+</script>
+
 <div class="brand">
-    <h1><a href="/">MonoSketch [*]</a></h1>
+    <h1><a href="{basePath}">MonoSketch [*]</a></h1>
 </div>
 
 <style>

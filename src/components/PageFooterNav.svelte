@@ -1,16 +1,20 @@
-<section class="grain-background">
+<script>
+    const basePath = import.meta.env.BASE_URL;
+</script>
+
+<nav class="grain-background">
     <div class="container">
         <div>
             Copyright 2023&nbsp;<a href="https://github.com/tuanchauict">@tuanchauict</a>
         </div>
         <div>
-            <a href="/commerce-disclosure">Commerce disclosure</a>
+            <a href="{basePath}commerce-disclosure">Commerce disclosure</a>
         </div>
     </div>
-</section>
+</nav>
 
 <style>
-    section {
+    nav {
         display: flex;
         justify-content: center;
         align-items: center;

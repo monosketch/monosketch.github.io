@@ -1,6 +1,6 @@
 <script>
     import PageHeader from "../PageHeader.svelte";
-    import FooterNav from "../FooterNav.svelte";
+    import FooterNav from "../PageFooterNav.svelte";
     import Table from "./Table.svelte";
     import Space from "../shared/Space.svelte";
 </script>
