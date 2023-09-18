@@ -16,7 +16,7 @@
         align-items: center;
         width: 100%;
         background-color: #374259;
-        padding: 2rem 2rem;
+        padding: 1.5rem 2rem;
     }
 
     .container {
