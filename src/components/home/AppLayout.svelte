@@ -40,7 +40,8 @@
     <Space height="2rem"/>
 
     <div class="carousel-container ">
-        <div class="carousel" style="width: {items.length*100}%;transform: translateX(-{currentSlide * 100 / items.length}%)">
+        <div class="carousel"
+             style="width: {items.length*100}%;transform: translateX(-{currentSlide * 100 / items.length}%)">
             {#each items as item, index}
                 <div class="carousel-item" key={index}>
                     <div class="graph-item">

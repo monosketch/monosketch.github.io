@@ -12,7 +12,7 @@
 </script>
 
 <main class="container">
-    <PageHeader/>
+    <PageHeader targetId="brand-name"/>
     <HomeHeader/>
     <OpenSource/>
     <BuildingBlocks/>
