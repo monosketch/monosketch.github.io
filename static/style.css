@@ -6,7 +6,8 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Jetbrains Mono", "Fira code", "Courier New", Courier, monospace; }
+  font-family: "Jetbrains Mono", "Fira code", "Courier New", Courier, monospace;
+  overflow-x: hidden; }
 
 body {
   display: flex;
@@ -54,3 +55,13 @@ section {
 
 .quote:after {
   content: '”'; }
+
+.graph {
+  overflow-x: clip; }
+
+@media (max-width: 100rem) {
+  .section-subtitle {
+    font-size: 1rem; }
+
+  .quote:before, .quote:after {
+    font-size: 5rem; } }

@@ -12,6 +12,7 @@ $bg-stroke-width: 2.3rem;
 
 body {
   font-family: $font;
+  overflow-x: hidden;
 }
 
 body {
@@ -68,4 +69,18 @@ section {
 
 .quote:after {
   content: '”';
+}
+
+.graph {
+  overflow-x: clip;
+}
+
+@media (max-width: 100rem) {
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .quote:before, .quote:after {
+    font-size: 5rem;
+  }
 }

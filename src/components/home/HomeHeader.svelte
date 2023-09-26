@@ -14,7 +14,7 @@
             <Space height="2.5rem"/>
             <CtaButton url="https://app.monosketch.io/" title="Start sketching" darkMode={true}/>
         </div>
-        <div class="demo-container">
+        <div class="graph">
             <DemoContent value="{circus}" isEditable="{true}" />
         </div>
 
@@ -45,7 +45,7 @@
         padding: 2rem;
     }
 
-    .demo-container {
+    .graph {
         padding: 0 2rem;
         font-size: calc(min(0.9rem, 0.6vw + 7px));
     }
@@ -67,12 +67,12 @@
             width: 100%;
         }
 
-        .demo-container {
+        .graph {
             width: 100%;
             padding-bottom: 2rem;
             display: flex;
             justify-content: center;
-            font-size: calc(min(1.2rem, 0.6vw + 7px));
+            font-size: calc(min(1.2rem, 0.7vw + 4px));
         }
     }
 </style>

@@ -70,6 +70,10 @@
             margin: 1rem;
         }
 
+        .graph {
+            font-size: calc(min(1.2rem, 0.7vw + 4px));
+        }
+
         .container {
             flex-direction: column;
             align-items: center;

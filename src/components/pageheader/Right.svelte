@@ -1,12 +1,13 @@
 <script>
     import GitHubStars from "../shared/icon/GitHubStars.svelte";
+    import NonBreak from "../shared/NonBreak.svelte";
 </script>
 
 <div class="tool">
     <a class="github-star" href="https://github.com/tuanchauict/MonoSketch/stargazers">
         <GitHubStars/>
     </a>
-    <a class="cta" href="https://app.monosketch.io">Start sketching</a>
+    <a class="cta" href="https://app.monosketch.io"><NonBreak>Start sketching</NonBreak></a>
 </div>
 
 <style>
@@ -40,5 +41,14 @@
 
     a {
         text-decoration: none;
+    }
+
+    @media (max-width: 100rem) {
+        .cta {
+            display: none;
+        }
+        .github-star {
+            margin-right: 1rem;
+        }
     }
 </style>

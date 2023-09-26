@@ -1,9 +1,11 @@
 <script>
+    import NonBreak from "../shared/NonBreak.svelte";
+
     const basePath = import.meta.env.BASE_URL;
 </script>
 
 <div class="brand">
-    <h1><a href="{basePath}">MonoSketch [*]</a></h1>
+    <h1><a href="{basePath}"><NonBreak>MonoSketch [*]</NonBreak></a></h1>
 </div>
 
 <style>

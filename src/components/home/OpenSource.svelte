@@ -62,5 +62,11 @@
         display: flex;
         justify-content: center;
     }
+
+    @media (max-width: 68rem) {
+        .graph {
+            font-size: 0.9rem;
+        }
+    }
 </style>
 
