@@ -20,6 +20,7 @@
     pre {
         font-family: "Jetbrains Mono", "Fira code", "Courier New", Courier, monospace;
         font-size: 1em;
+        overflow-x: auto;
     }
 
     pre:active, pre:focus {

@@ -89,4 +89,10 @@
         margin: 0 1rem;
         font-size: calc(min(1.2rem, 0.6vw + 7px));
     }
+
+    @media (max-width: 60rem) {
+        .graph-item {
+            font-size: calc(min(1rem, 0.7vw + 6px));
+        }
+    }
 </style>

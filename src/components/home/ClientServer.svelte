@@ -11,10 +11,9 @@
             <div class="graph-item">
                 <DemoContent value="{clientServer}" isEditable="{true}"/>
             </div>
-            <Space height="3rem"/>
         </div>
     </div>
-    <Space height="3rem"/>
+    <Space height="5rem"/>
     <div class="container reverse">
         <div class="graph">
             <div class="graph-item">
@@ -56,7 +55,7 @@
         flex-direction: column;
         align-content: center;
         justify-content: center;
-        font-size: calc(min(1.2rem, 0.7vw + 7px));
+        font-size: calc(min(1.1rem, 0.7vw + 7px));
     }
 
     .graph-item {
@@ -71,7 +70,7 @@
         }
 
         .graph {
-            font-size: calc(min(1.2rem, 0.7vw + 4px));
+            font-size: calc(min(1rem, 0.75vw + 5px));
         }
 
         .container {
