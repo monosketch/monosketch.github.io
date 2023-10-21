@@ -9,7 +9,7 @@
     const baseRepoUrl = "https://github.com/tuanchauict/MonoSketch";
     const licenseUrl = baseRepoUrl + "/blob/main/LICENSE";
 
-    let isSupportEnabled = false;
+    let isSupportEnabled = true;
 </script>
 
 <section>
